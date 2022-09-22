@@ -1,0 +1,4 @@
+CREATE LOADING JOB openCypher_Movie FOR GRAPH openCypher_Movie {
+      DEFINE FILENAME MyDataSource;
+      LOAD MyDataSource TO VERTEX Movie VALUES($0, $1, $2, $3) USING SEPARATOR=",", HEADER="false", EOL="\n", QUOTE="double";
+    }

@@ -1,0 +1,4 @@
+CREATE LOADING JOB openCypher_Movie FOR GRAPH openCypher_Movie {
+      DEFINE FILENAME MyDataSource;
+      LOAD MyDataSource TO EDGE FOLLOWS VALUES($0, $1) USING SEPARATOR=",", HEADER="false", EOL="\n", QUOTE="double";
+    }

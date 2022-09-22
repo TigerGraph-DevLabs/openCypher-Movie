@@ -1,5 +1,5 @@
 USE GRAPH openCypher_Movie
-CREATE LOADING JOB openCypher_Movie FOR GRAPH openCypher_Movie {
+CREATE LOADING JOB openCypher_REVIEWED FOR GRAPH openCypher_Movie {
       DEFINE FILENAME MyDataSource;
       LOAD MyDataSource TO EDGE REVIEWED VALUES($0, $3, $1, $2) USING SEPARATOR=",", HEADER="false", EOL="\n", QUOTE="double";
     }

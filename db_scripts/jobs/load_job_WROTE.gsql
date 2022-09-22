@@ -1,5 +1,5 @@
 USE GRAPH openCypher_Movie
-CREATE LOADING JOB openCypher_Movie FOR GRAPH openCypher_Movie {
+CREATE LOADING JOB openCypher_WROTE FOR GRAPH openCypher_Movie {
       DEFINE FILENAME MyDataSource;
       LOAD MyDataSource TO EDGE WROTE VALUES($0, $1) USING SEPARATOR=",", HEADER="false", EOL="\n", QUOTE="double";
     }

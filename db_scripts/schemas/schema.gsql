@@ -9,6 +9,7 @@ CREATE SCHEMA_CHANGE JOB change_schema_of_openCypher_Movie FOR GRAPH openCypher_
     ADD DIRECTED EDGE WROTE(FROM Person, TO Movie) WITH REVERSE_EDGE="reverse_WROTE";
     ADD DIRECTED EDGE DIRECTED(FROM Person, TO Movie) WITH REVERSE_EDGE="reverse_DIRECTED";
     ADD DIRECTED EDGE FOLLOWS(FROM Person, TO Person) WITH REVERSE_EDGE="reverse_FOLLOWS";
+}
 
 RUN SCHEMA_CHANGE JOB change_schema_of_openCypher_Movie
 DROP JOB change_schema_of_openCypher_Movie

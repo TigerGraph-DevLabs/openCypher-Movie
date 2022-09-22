@@ -12,5 +12,6 @@ openCypher_Movie
 │   ├── load
 │   ├── query
 |   └── schema
-└── README.md
+├── README.md
+└── openCypher_Movie_3-7.tar.gz
 ```

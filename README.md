@@ -9,9 +9,11 @@
 openCypher_Movie
 ├── data
 ├── db_scripts
-│   ├── load
-│   ├── query
-|   └── schema
+│   ├── jobs
+│   ├── queries
+|   └── schemas
 ├── README.md
 └── openCypher_Movie_3-7.tar.gz
 ```
+
+[Looking for openCypher queries?](https://github.com/TigerGraph-DevLabs/openCypher-Movie/blob/main/db_scripts/queries/openCypher.md)

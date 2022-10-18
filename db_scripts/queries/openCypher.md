@@ -2,7 +2,8 @@
 ```
 Match (m:Movie) 
 WHERE m.released > 2000 
-RETURN m limit 5
+RETURN m 
+LIMIT 5
 ```
 #### Query2
 ```
